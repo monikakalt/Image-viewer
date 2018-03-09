@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-card *ngFor="let file of imageFiles" class="image-preview">
+    <mat-card-header>
+      <mat-card-title>{{file.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{file.url}}" alt="{{file.name}}">
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="openFile(file)">Open</button>
+      <button mat-button color="warn" class="float-right" (click)="deleteFile(file)">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

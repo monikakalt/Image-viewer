@@ -1,0 +1,25 @@
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+app-path {
+  flex: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+app-directory-explorer {
+  flex: 0;
+}
+
+app-gallery {
+  flex: 1;
+  overflow-y: auto;
+}

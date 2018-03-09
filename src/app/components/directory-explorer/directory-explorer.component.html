@@ -1,0 +1,12 @@
+
+<div class="container shadow">
+  <mat-list>
+    <mat-list-item *ngFor="let directory of directories" (click)="directoryClicked(directory)">
+      <mat-icon mat-list-icon class="folder-icon">folder</mat-icon>
+      <span mat-line>{{directory.name}}</span>
+    </mat-list-item>
+  </mat-list>
+  <ng-template [ngIf]="!directories">
+    null
+  </ng-template>
+</div>

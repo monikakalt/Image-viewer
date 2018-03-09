@@ -1,0 +1,27 @@
+:host {
+  height: 100%;
+  display: block;
+  padding: 0;
+}
+
+.container {
+  padding: 0.25em 0.5em;
+}
+
+.image-preview {
+  display: inline-block;
+  margin: 0.25em;
+
+  img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+mat-card-title {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+

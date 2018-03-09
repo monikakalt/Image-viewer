@@ -1,0 +1,5 @@
+<app-path [currentPathInfo]="currentPathInfo"></app-path>
+<div class="main-wrapper">
+  <app-directory-explorer (currentPathChanged)="currentPathChanged($event)"></app-directory-explorer>
+  <app-gallery [currentPath]="currentPathInfo?.fullPath"></app-gallery>
+</div>
